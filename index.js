@@ -37,11 +37,11 @@ function clothingCard(data,i){
 
     var head5 = document.createElement("h5")
     productMeta.appendChild(head5)
-    head5.innerHTML = data[i].brand
+    head5.innerHTML = "Brand: " + data[i].brand
 
     var price = document.createElement("p")
     productMeta.appendChild(price)
-    price.innerHTML= "Php " + data[i].price
+    price.innerHTML= "Price Php " + data[i].price +".00"
 
     if(data[i].isAccessory == false) {
         clothingContainer.appendChild(productCard);

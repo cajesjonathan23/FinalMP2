@@ -1,3 +1,48 @@
+
+#left-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2%;
+    /* background-color: #009688; */
+    color: #fff;
+}
+.dark-modes {
+    
+    color: #030303;
+    padding: 20px;
+    border: none;
+    font-size: 30px;
+}
+#logo a {
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#logo a span {
+    font-weight: 600;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 540px) {
+    #left-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #logo a {
+        font-size: 18px; /* Adjust text size for mobile screens */
+        margin-bottom: 10px;
+    }
+    #search-wrapper{
+        display: none;
+    }
+}
+
+main {
+    margin: 0 5%;
+}
 .order-confirmation-page{
     margin-top: 12%;
     width: 100%;

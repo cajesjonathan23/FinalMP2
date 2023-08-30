@@ -6,8 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart list</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./dark-mode.css">  
+    <script src="./dark-mode.js"></script>  
     <link rel="stylesheet" href="./cart.css">
     <link rel="stylesheet" href="./nav.css">
 
@@ -17,9 +23,9 @@
     <header>
         <nav>
             <div id="left-menu">
-                <div id="logo"><a href="index.html"><span>Shop</span>lane</a></div>
-                <a href="#clothing-wrapper">Clothing</a>
-                <a href="#accessories-wrapper">Accessories</a>
+                <div id="logo"><a href="index.html"><span>Style</span><span style="color: #009688;"><b>Symphony</b></span></a></div>
+                <!-- <a href="#clothing-wrapper">Clothing</a>
+                <a href="#accessories-wrapper">Accessories</a> -->
             </div>
             <div id="search-wrapper">
                 <i class="fas fa-search"></i>
@@ -30,14 +36,14 @@
                     <a href="" id="cart-icon"><i id="cart-logo" class="fas fa-shopping-cart shopping-cart"></i></a>
                     <p id="items__in__cart" class="no-of-items"></p>
                 </div>
-                <img src="./assets/rdj.jpg" />
-            
-            <div class="profile"><img src="" alt=""></div>
+                <button id="dark-mode-toggle" onclick="toggleDarkMode()">
+                    <i class="fas fa-circle-half-stroke dark-modes"></i>
+                </button>
         </div>
         </nav>
     </header>
     <section id="checkout-window">
-        <h2 class="checkout">Checkout</h2>
+        <h2 class="checkout"></h2>
         <h3 Id= "Total_Items"class="Total-items">Total Items 1 </h3>
         <div id="list-amount-wrapper" class="list-total-wrapper">
            <div id="List" class="list">
@@ -53,11 +59,14 @@
                         <p class="amount">Rs 2599</p>
                     </div>
                 </div>-->
+               
             </div> 
             <div class="amount-div">
                 <h3 class="total-amount">Total Amount</h3>
                 <p id ="Total" class="sum-amount">Amount Rs 2599</p>
                 <button id="placeOrder" class="place-order">Place Order</button>
+                <button id="deleteAllProductsBtn" class="delete-order">Clear Cart</button>
+
             </div>
         </div>
 
@@ -72,9 +81,9 @@
         </div>
         <div>
             <p class="footer-heading">Helpful Links</p>
-            <a href="/" class="footer-link">Home</a>
-            <a href="/" class="footer-link">About</a>
-            <a href="/" class="footer-link">Contact</a>
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="about.html" class="footer-link">About</a>
+            <a href="contact.html" class="footer-link">Contact</a>
         </div>
         <div>
             <p class="footer-heading">Partners</p>
@@ -88,8 +97,8 @@
             <p class="footer-heading">Address</p>
             <p href="/" class="footer-link">Building 101</p>
             <p href="/" class="footer-link">Central Avenue</p>
-            <p href="/" class="footer-link">LA - 902722</p>
-            <p href="/" class="footer-link">United States</p>
+            <p href="/" class="footer-link">Manila</p>
+            <p href="/" class="footer-link">Philippines</p>
         </div>
     </footer>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

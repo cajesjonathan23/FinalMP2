@@ -6,12 +6,88 @@
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
+.dark-modes {
+    
+    color: #030303;
+    padding: 20px;
+    border: none;
+    font-size: 30px;
+}
+#left-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2%;
+    /* background-color: #009688; */
+    color: #fff;
+}
+
+#logo a {
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#logo a span {
+    font-weight: 600;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 540px) {
+    #left-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #logo a {
+        font-size: 18px; /* Adjust text size for mobile screens */
+        margin-bottom: 10px;
+    }
+    #search-wrapper{
+        display: none;
+    }
+}
+
 .product-details-page{
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 90px;
     display: flex;
     padding: 15px;
+}
+@media screen and (max-width: 768px) {
+    .preview {
+        width: 43vh !important;
+       
+    }
+    .product-details-page {
+      
+        max-width: 100%; /* Full width on mobile */
+        margin: 0 auto;
+        margin-top: 60px; /* Adjust margin for mobile */
+        display: block; /* Change to block layout for single column */
+        padding: 10px; /* Adjust padding for mobile */
+    }
+    .right{
+        text-align: left;
+        width: 100% !important;
+    }
+    h1{
+        font-weight: 200 !important;
+        font-size: 25px !important;
+        letter-spacing: -1px !important;
+    }
+    h3{
+        margin-top: 5px !important;
+    }
+    .product-details-container {
+        padding: 0; /* Remove padding for mobile */
+    }
+
+    .product-preview-img {
+        align-items: center;
+        width: 100%; /* Full width for product preview images on mobile */
+    }
 }
 .left{
     width: 40%;
@@ -30,7 +106,7 @@ h1{
     letter-spacing: -2px;
 }
 h3{
-    margin-top: 20px;
+    margin-top: 5px;
     font-weight: 200;
     font-size: 20px;
     letter-spacing: 1px;

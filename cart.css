@@ -7,6 +7,51 @@
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
+.dark-modes {
+    
+    color: #030303;
+    padding: 20px;
+    border: none;
+    font-size: 30px;
+}
+#left-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2%;
+    /* background-color: #009688; */
+    color: #fff;
+}
+
+#logo a {
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#logo a span {
+    font-weight: 600;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 540px) {
+    #left-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #logo a {
+        font-size: 18px; /* Adjust text size for mobile screens */
+        margin-bottom: 10px;
+    }
+    #search-wrapper{
+        display: none;
+    }
+}
+
+main {
+    margin: 0 5%;
+}
 h2{
     margin: 20px 0;
     font-size: 36px;
@@ -19,6 +64,47 @@ h2{
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+    .list-total-wrapper {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .items-list-card {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        box-shadow: 2px 2px 4px grey;
+       
+        padding: 20px;
+        border-radius: 6px;
+        margin-bottom: 10px
+      
+    }
+    .list{
+        padding: 10px;
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+    }
+    .amount-div{
+       
+        width: 100% !important;
+        height: 200px;
+        box-shadow: 2px 2px 4px grey;
+        border-radius: 6px;
+        padding: 10px !important;
+        box-sizing: border-box;
+    }
+    .Total-items{
+        margin-bottom: 10px !important;
+        margin-left: 30px !important;
+        margin-top: 10px !important;
+    }
+    .checkout{
+        margin-top: 30% !important;
+        margin-left: 30px !important;
+        text-align: center;
+    }
 }
 .list{
     width: 48%;
@@ -73,4 +159,15 @@ h2{
     border-radius: 4px;
     box-shadow: 0 2px 10px rgba(0,0,0,50%);
 }
-
+.delete-order{
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    background-color: red;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,50%);
+}
