@@ -87,7 +87,6 @@ placeOrder.addEventListener("click", function(e){
     }
 })
 
-
 function removeCardFromLocalStorage() {
     var FromLocalStorage = localStorage.getItem("productData");
     if (FromLocalStorage !== null && FromLocalStorage !== undefined) {
