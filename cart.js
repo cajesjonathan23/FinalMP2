@@ -55,12 +55,12 @@ list.addEventListener("click", function (e) {
             var index = parseInt(e.target.getAttribute("data-index"));
             removeProductFromLocalStorage(index);
             list.innerHTML = ""; // Clear the cart UI
-            totalSumPrice.innerHTML = "Total Amount: Php 0"; // Reset total amount
-            totalItems -= 1; // Decrement total items by 1
-            totalitems.innerHTML = "Total Items: " + totalItems; // Update total items in UI
-            localStorage.setItem("cartItemNo", JSON.stringify(totalItems)); // Update cart item count
-            noOfItems.innerHTML = totalItems; // Update cart item count in the header
-            renderCardInLocalStorage(); // Render the updated cart UI
+            totalSumPrice.innerHTML = "Total Amount: Php 0"; 
+            totalItems -= 1; 
+            totalitems.innerHTML = "Total Items: " + totalItems; 
+            localStorage.setItem("cartItemNo", JSON.stringify(totalItems));
+            noOfItems.innerHTML = totalItems; 
+            renderCardInLocalStorage(); 
         }
     }
 });
@@ -103,12 +103,12 @@ function removeCardFromLocalStorage() {
 var deleteAllProductsBtn = document.getElementById("deleteAllProductsBtn");
 deleteAllProductsBtn.addEventListener("click", function() {
     if (confirm("Are you sure you want to delete all products from the cart?")) {
-        removeCardFromLocalStorage(); // Delete all products from local storage
-        list.innerHTML = ""; // Clear the cart UI
-        totalSumPrice.innerHTML = "Total Amount: Php 0"; // Reset total amount
-        totalitems.innerHTML = "Total Items: 0"; // Reset total items
-        localStorage.setItem("cartItemNo", JSON.stringify(0)); // Reset cart item count
-        noOfItems.innerHTML = 0; // Reset cart item count in the header
+        removeCardFromLocalStorage(); 
+        list.innerHTML = ""; 
+        totalSumPrice.innerHTML = "Total Amount: Php 0"; 
+        totalitems.innerHTML = "Total Items: 0"; 
+        localStorage.setItem("cartItemNo", JSON.stringify(0)); 
+        noOfItems.innerHTML = 0; 
         alert("All products have been deleted from the cart.");
     }
 });
