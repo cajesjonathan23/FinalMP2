@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="./product-details.css">
+    <link rel="stylesheet" href="./nav.css">
+
+
+    <title>Product Details Page</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="left-menu">
+                <div id="logo"><a href="index.html"><span>Shop</span>lane</a></div>
+                <a href="#clothing-wrapper">Clothing</a>
+                <a href="#accessories-wrapper">Accessories</a>
+            </div>
+            <div id="search-wrapper">
+                <i class="fas fa-search"></i>
+                <input id="search-box" type="text" name="search" placeholder="Search for Clothing and Accessories" />
+            </div>
+            <div id="right-menu">
+                <div class="shopping-cart-wrapper">
+                    <a href="" id="cart-icon"><i id="cart-logo" class="fas fa-shopping-cart shopping-cart"></i></a>
+                    <p id="items__in__cart" class="no-of-items"></p>
+                </div>
+                <img src="./assets/rdj.jpg" />
+            
+            <div class="profile"><img src="" alt=""></div>
+        </div>
+        </nav>
+    </header>
+    <main>
+        <section id="product-details-container">
+            <!-- <div class="product-details-page">
+                <div class="left"><img
+                        src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/08a7b230-ee8f-46c0-a945-4e835a3c01c01541402833619-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-1.jpg"
+                        alt="" class="preview" /></div>
+                <div class="right">
+                    <h1>Men Navy Blue Solid Sweatshirt</h1>
+                    <h3>United Colors of Benetton</h3>
+                    <h3>Price: Rs <span id="price">2599</span></h3>
+                    <h3>Description</h3>
+                    <p>Navy solid sweatshirt with patchwork, has a round neck, long sleeves, straight hem</p>
+                    <h3>Product Preview</h3>
+
+                    <div class="product-preview-img-container">
+                        <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/08a7b230-ee8f-46c0-a945-4e835a3c01c01541402833619-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-1.jpg" alt="" class="product-preview-img">
+                        <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/efc3d5b9-1bb3-4427-af53-7acae7af98951541402833591-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-2.jpg" alt="" class="product-preview-img">
+                        <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/c7e58861-3431-4189-9903-9880f5eebd181541402833566-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-3.jpg" alt="" class="product-preview-img">
+                        <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/c7e58861-3431-4189-9903-9880f5eebd181541402833566-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-3.jpg" alt="" class="product-preview-img">
+                        <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/c7e58861-3431-4189-9903-9880f5eebd181541402833566-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-3.jpg" alt="" class="product-preview-img">
+                    </div>
+                </div>
+            </div> -->
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p class="footer-heading">Online Store</p>
+            <a href="/" class="footer-link">Men Clothing</a>
+            <a href="/" class="footer-link">Women Clothing</a>
+            <a href="/" class="footer-link">Men Accessories</a>
+            <a href="/" class="footer-link">Women Accessories</a>
+        </div>
+        <div>
+            <p class="footer-heading">Helpful Links</p>
+            <a href="/" class="footer-link">Home</a>
+            <a href="/" class="footer-link">About</a>
+            <a href="/" class="footer-link">Contact</a>
+        </div>
+        <div>
+            <p class="footer-heading">Partners</p>
+            <a href="/" class="footer-link">Zara</a>
+            <a href="/" class="footer-link">Pantaloons</a>
+            <a href="/" class="footer-link">Levis</a>
+            <a href="/" class="footer-link">UCB</a>
+            <a href="/" class="footer-link">+ Many More</a>
+        </div>
+        <div>
+            <p class="footer-heading">Address</p>
+            <p href="/" class="footer-link">Building 101</p>
+            <p href="/" class="footer-link">Central Avenue</p>
+            <p href="/" class="footer-link">LA - 902722</p>
+            <p href="/" class="footer-link">United States</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./product-details.js"></script>
+</body>
+
+</html>

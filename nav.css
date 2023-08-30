@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.add-to-cart{
+    margin-top: 40px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    background-color: #009688;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,50%);
+}
+
+.shopping-cart-wrapper{
+    position: relative;
+    margin-right: 30px;
+}
+nav{
+    width: 100%;
+    box-shadow: 0 2px 5px #ccc;
+    background-color: white;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 18px 8%;
+}
+#left-menu{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#logo a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin-right: 15px;
+}
+#logo span {
+    font-weight: 800;
+}
+#logo {
+    font-size: 36px;
+    text-transform: uppercase}
+
+#right-menu{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+.shopping-cart{
+    font-size: 28px;
+    color: black;
+    
+}
+.no-of-items{
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 600;
+    background-color: #009688;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+}
+#cart-icon{
+    text-decoration: none;
+
+}
+
+#left-menu > a {
+    text-decoration: none;
+    color: black;
+    margin-left: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#search-box {
+    width: 100%;
+    border: 1px solid rgb(245, 242, 242);
+    background-color: rgb(245, 242, 242);
+    box-sizing: border-box;
+    padding: 10px 24px 8px 48px;
+    color: black;
+    outline: none;
+}
+#search-wrapper{
+    position: relative;
+    width: 40%;
+}
+
+#search-wrapper > i {
+    position: absolute;
+    color: #999;
+    font-size: 18px;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.fa-search:before {
+    content: "\f002";
+}
+
+#right-menu > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+footer {
+    width: 100%;
+    background-color: #1c1b1e;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 4% 8%;
+}
+
+footer > div:first-of-type {
+    padding-left: 0;
+
+}
+.footer-heading {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    opacity: 0.9;
+    letter-spacing: 1px;}
+
+.footer-link {
+    color: white;
+    display: block;
+    margin-top: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.8;
+    text-decoration: none
+}
+#edyoda-projects-logo {
+    width: 128px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}

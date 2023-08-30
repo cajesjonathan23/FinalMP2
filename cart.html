@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart list</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="./nav.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="left-menu">
+                <div id="logo"><a href="index.html"><span>Shop</span>lane</a></div>
+                <a href="#clothing-wrapper">Clothing</a>
+                <a href="#accessories-wrapper">Accessories</a>
+            </div>
+            <div id="search-wrapper">
+                <i class="fas fa-search"></i>
+                <input id="search-box" type="text" name="search" placeholder="Search for Clothing and Accessories" />
+            </div>
+            <div id="right-menu">
+                <div class="shopping-cart-wrapper">
+                    <a href="" id="cart-icon"><i id="cart-logo" class="fas fa-shopping-cart shopping-cart"></i></a>
+                    <p id="items__in__cart" class="no-of-items"></p>
+                </div>
+                <img src="./assets/rdj.jpg" />
+            
+            <div class="profile"><img src="" alt=""></div>
+        </div>
+        </nav>
+    </header>
+    <section id="checkout-window">
+        <h2 class="checkout">Checkout</h2>
+        <h3 Id= "Total_Items"class="Total-items">Total Items 1 </h3>
+        <div id="list-amount-wrapper" class="list-total-wrapper">
+           <div id="List" class="list">
+                
+                  <!--<div class="items-list-card">
+                    <div class="image-section">
+                        <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/08a7b230-ee8f-46c0-a945-4e835a3c01c01541402833619-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-1.jpg"
+                            alt="">
+                    </div>
+                    <div class="details-section">
+                        <h3 class="product_name">men navy blue solid sweatshirt</h3>
+                        <p class="quantity">x1</p>
+                        <p class="amount">Rs 2599</p>
+                    </div>
+                </div>-->
+            </div> 
+            <div class="amount-div">
+                <h3 class="total-amount">Total Amount</h3>
+                <p id ="Total" class="sum-amount">Amount Rs 2599</p>
+                <button id="placeOrder" class="place-order">Place Order</button>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div>
+            <p class="footer-heading">Online Store</p>
+            <a href="/" class="footer-link">Men Clothing</a>
+            <a href="/" class="footer-link">Women Clothing</a>
+            <a href="/" class="footer-link">Men Accessories</a>
+            <a href="/" class="footer-link">Women Accessories</a>
+        </div>
+        <div>
+            <p class="footer-heading">Helpful Links</p>
+            <a href="/" class="footer-link">Home</a>
+            <a href="/" class="footer-link">About</a>
+            <a href="/" class="footer-link">Contact</a>
+        </div>
+        <div>
+            <p class="footer-heading">Partners</p>
+            <a href="/" class="footer-link">Zara</a>
+            <a href="/" class="footer-link">Pantaloons</a>
+            <a href="/" class="footer-link">Levis</a>
+            <a href="/" class="footer-link">UCB</a>
+            <a href="/" class="footer-link">+ Many More</a>
+        </div>
+        <div>
+            <p class="footer-heading">Address</p>
+            <p href="/" class="footer-link">Building 101</p>
+            <p href="/" class="footer-link">Central Avenue</p>
+            <p href="/" class="footer-link">LA - 902722</p>
+            <p href="/" class="footer-link">United States</p>
+        </div>
+    </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./cart.js"></script>
+</body>
+
+</html>
