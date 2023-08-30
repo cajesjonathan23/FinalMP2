@@ -39,6 +39,25 @@ button{
 #logo a span {
     font-weight: 600;
 }
+/* Add CSS styles for suggestions */
+#suggestions-container {
+    position: absolute;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 100;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #f5f5f5;
+}
 
 /* Media Query for smaller screens */
 @media screen and (max-width: 540px) {

@@ -49,13 +49,19 @@ cartLogo.addEventListener("click", function (e) {
 
   
 renderCardInLocalStorage()
-list.addEventListener("click", function(e) {
-    if (e.target.classList.contains("delete-product-btn")) {
-        var index = parseInt(e.target.getAttribute("data-index"));
-        removeProductFromLocalStorage(index);
-        list.innerHTML = ""; // Clear the cart UI
-        renderCardInLocalStorage(); // Render the updated cart UI
-        updateCartItemCount(); // Update the cart item count
+list.addEventListener("click", function (e) {
+    if (e.target.classList.contains("delete-order")) {
+        if (confirm("Are you sure you want to remove this product from the cart?")) {
+            var index = parseInt(e.target.getAttribute("data-index"));
+            removeProductFromLocalStorage(index);
+            list.innerHTML = ""; // Clear the cart UI
+            totalSumPrice.innerHTML = "Total Amount: Php 0"; // Reset total amount
+            totalItems -= 1; // Decrement total items by 1
+            totalitems.innerHTML = "Total Items: " + totalItems; // Update total items in UI
+            localStorage.setItem("cartItemNo", JSON.stringify(totalItems)); // Update cart item count
+            noOfItems.innerHTML = totalItems; // Update cart item count in the header
+            renderCardInLocalStorage(); // Render the updated cart UI
+        }
     }
 });
 

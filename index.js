@@ -71,3 +71,5 @@ owl.owlCarousel({
 cartLogo.addEventListener("click", function (e) {
     cartIcon.href = "./cart.html"
   })
+
+  
