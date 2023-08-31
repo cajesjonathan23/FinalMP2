@@ -11,67 +11,70 @@
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="./nav.css">
     <link rel="stylesheet" href="./dark-mode.css">
+    <script src="./dark-mode.js"></script>
     <link rel="stylesheet" href="./checkout.css">
 
 
     <title>Checkout</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div id="left-menu">
-                <div id="logo"><a href="index.html"><span>Style</span><span style="color: #009688;"><b>Symphony</b></span></a></div>
-                <!-- <a href="#clothing-wrapper">Clothing</a>
-                <a href="#accessories-wrapper">Accessories</a> -->
-            </div>
-            <div id="search-wrapper">
-                <i class="fas fa-search"></i>
-                <input id="search-box" type="text" name="search" placeholder="Search for Clothing and Accessories" />
-            </div>
-            <div id="right-menu">
-                <div class="shopping-cart-wrapper">
-                    <a href="" id="cart-icon"><i id="cart-logo" class="fas fa-shopping-cart shopping-cart"></i></a>
-                    <p id="items__in__cart" class="no-of-items"></p>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand " href="index.html" style="font-weight: bold; font-size: 30px;">
+                StyleSymphony
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               
+                <div id="search-wrapper" class="d-md-flex w-100">
+                    <i class="fas fa-search"></i>
+                    <input id="search-box" type="text" name="search" placeholder="Search for Clothing and Accessories" />
+                    <div id="suggestions-container" class="suggestions-container"></div>
                 </div>
-                <button id="dark-mode-toggle" onclick="toggleDarkMode()">
-                    <i class="fas fa-circle-half-stroke dark-modes"></i>
-                </button>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div id="right-menu" class="d-md-flex">
+                    <div class="shopping-cart-wrapper">
+                        <a href="" id="cart-icon"><i id="cart-logo" class="fas fa-shopping-cart shopping-cart"></i></a>
+                        <p id="items__in__cart" class="no-of-items"></p>
+                    </div>
+                    <button id="dark-mode-toggle" onclick="toggleDarkMode()">
+                        <i class="fas fa-circle-half-stroke dark-modes"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-        </nav>
-    </header>
+    </nav>
+    
+    
     <div class="order-confirmation-page">
     <i class="fas fa-check-circle checked"></i>
     
     <h1>Your Order has been Placed</h1>
 </div>
-<footer>
-    <div>
-        <p class="footer-heading">Online Store</p>
-        <a href="/" class="footer-link">Men Clothing</a>
-        <a href="/" class="footer-link">Women Clothing</a>
-        <a href="/" class="footer-link">Men Accessories</a>
-        <a href="/" class="footer-link">Women Accessories</a>
-    </div>
-    <div>
-        <p class="footer-heading">Helpful Links</p>
-        <a href="index.html" class="footer-link">Home</a>
-        <a href="about.html" class="footer-link">About</a>
-        <a href="contact.html" class="footer-link">Contact</a>
-    </div>
-    <div>
-        <p class="footer-heading">Partners</p>
-        <a href="/" class="footer-link">Zara</a>
-        <a href="/" class="footer-link">Pantaloons</a>
-        <a href="/" class="footer-link">Levis</a>
-        <a href="/" class="footer-link">UCB</a>
-        <a href="/" class="footer-link">+ Many More</a>
-    </div>
-    <div>
-        <p class="footer-heading">Address</p>
-        <p href="/" class="footer-link">Building 101</p>
-        <p href="/" class="footer-link">Central Avenue</p>
-        <p href="/" class="footer-link">Manila</p>
-        <p href="/" class="footer-link">Philippines</p>
+<footer class="bg-dark text-white text-center py-3 fixed">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h5>Follow Us</h5>
+                <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
     </div>
 </footer>
     <script src="./checkout.js"></script>

@@ -60,7 +60,7 @@ nav{
 
 #right-menu{
     display: flex;
-    justify-content: end;
+    justify-content: left;
     align-items: center;
 
 }

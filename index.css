@@ -1,15 +1,15 @@
 body {
-    margin-top: 5% 0;
+    margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
 }
-button{
-    border: none;
 
+button {
+    border: none;
 }
+
 .dark-modes {
-    
     color: #030303;
     padding: 20px;
     border: none;
@@ -21,12 +21,12 @@ button{
     color: #ffffff;
     padding: 20px;
 }
+
 #left-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 2%;
-    /* background-color: #009688; */
     color: #fff;
 }
 
@@ -39,6 +39,7 @@ button{
 #logo a span {
     font-weight: 600;
 }
+
 /* Add CSS styles for suggestions */
 #suggestions-container {
     position: absolute;
@@ -48,6 +49,7 @@ button{
     background-color: white;
     border: 1px solid #ccc;
     z-index: 100;
+    margin-top: 6%;
 }
 
 .suggestion-item {
@@ -63,15 +65,30 @@ button{
 @media screen and (max-width: 540px) {
     #left-menu {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
     }
 
     #logo a {
-        font-size: 18px; /* Adjust text size for mobile screens */
+        font-size: 18px;
         margin-bottom: 10px;
     }
-    #search-wrapper{
-        display: none;
+
+    #suggestions-container {
+        position: static;
+        max-height: none;
+        border: none;
+        background-color: transparent;
+    }
+
+    .suggestion-item {
+        padding: 5px;
+    }
+
+    #right-menu {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-top: 10px;
     }
 }
 

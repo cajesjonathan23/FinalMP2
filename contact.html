@@ -5,42 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- CSS Files -->
-<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
-<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.0/components/contacts/contact-1/assets/css/contact-1.css" />  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.0/components/contacts/contact-1/assets/css/contact-1.css" />  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
         rel="stylesheet">
     <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
         rel="stylesheet">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./contact.css">
+    <script src="./dark-mode.js"></script>
     <link rel="stylesheet" href="./nav.css">
 
     <title>Final Project</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div id="left-menu">
-                <div id="logo"><a href="index.html"><span>Style</span><span style="color: #009688;"><b>Symphony</b></span></a></div>
-                <!-- <a href="#clothing-wrapper">Clothing</a>
-                <a href="#accessories-wrapper">Accessories</a> -->
-            </div>
-            <div id="search-wrapper">
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand " href="index.html" style="font-weight: bold; font-size: 30px;">
+            StyleSymphony
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+           
+            <div id="search-wrapper" class="d-md-flex w-100">
                 <i class="fas fa-search"></i>
                 <input id="search-box" type="text" name="search" placeholder="Search for Clothing and Accessories" />
+                <div id="suggestions-container" class="suggestions-container"></div>
             </div>
-            <div id="right-menu">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active " style="color: black !important;">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div id="right-menu" class="d-md-flex">
                 <div class="shopping-cart-wrapper">
                     <a href="" id="cart-icon"><i id="cart-logo" class="fas fa-shopping-cart shopping-cart"></i></a>
                     <p id="items__in__cart" class="no-of-items"></p>
                 </div>
-                <img src="./assets/rdj.jpg" />
-            
-            <div class="profile"><img src="" alt=""></div>
+                <button id="dark-mode-toggle" onclick="toggleDarkMode()">
+                    <i class="fas fa-circle-half-stroke dark-modes"></i>
+                </button>
+            </div>
         </div>
-        </nav>
-    </header>
+    </div>
+</nav>
+
+
     <!-- About 2 - Bootstrap Brain Component -->
     <br><br><!-- Contact 1 - Bootstrap Brain Component -->
     <section class="bg-light py-3 py-md-5 my-5">
@@ -48,7 +69,7 @@
         <div class="row justify-content-md-center">
           <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
             <h2 class="mb-4 display-5 text-center">Contact Form</h2>
-            <p class="text-secondary mb-5 text-center">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque et neque id ligula mattis commodo.</p>
+            <!-- <p class="text-secondary mb-5 text-center">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque et neque id ligula mattis commodo.</p> -->
             <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
           </div>
         </div>
@@ -104,36 +125,19 @@
         </div>
       </div>
     </section>
-  <footer>
-    <div>
-        <p class="footer-heading">Online Store</p>
-        <a href="/" class="footer-link">Men Clothing</a>
-        <a href="/" class="footer-link">Women Clothing</a>
-        <a href="/" class="footer-link">Men Accessories</a>
-        <a href="/" class="footer-link">Women Accessories</a>
-    </div>
-    <div>
-        <p class="footer-heading">Helpful Links</p>
-        <a href="/" class="footer-link">Home</a>
-        <a href="about.html" class="footer-link">About</a>
-        <a href="contact.html" class="footer-link">Contact</a>
-    </div>
-    <div>
-        <p class="footer-heading">Partners</p>
-        <a href="/" class="footer-link">Zara</a>
-        <a href="/" class="footer-link">Pantaloons</a>
-        <a href="/" class="footer-link">Levis</a>
-        <a href="/" class="footer-link">UCB</a>
-        <a href="/" class="footer-link">+ Many More</a>
-    </div>
-    <div>
-        <p class="footer-heading">Address</p>
-        <p href="/" class="footer-link">Building 101</p>
-        <p href="/" class="footer-link">Central Avenue</p>
-        <p href="/" class="footer-link">LA - 902722</p>
-        <p href="/" class="footer-link">United States</p>
-    </div>
-</footer>
+    <footer class="bg-dark text-white text-center py-3 fixed">
+      <div class="container">
+          <div class="row">
+              <div class="col">
+                  <h5>Follow Us</h5>
+                  <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+      </div>
+  </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
