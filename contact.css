@@ -107,9 +107,9 @@ button {
 .dark-mode input[type="email"],
 .dark-mode input[type="tel"],
 .dark-mode textarea {
-    color: #fff;
+    color: #000000;
     background-color: #fcfcfc;
-    border: 1px solid #f5efef; 
+    border: 2px solid #fcfcfc; 
 }
 
 
@@ -119,6 +119,7 @@ button {
     color: #fff;
 }
 
+/* Adjust background color for submit button */
 .dark-mode .btn-primary {
     background-color: #007bff; 
 }
